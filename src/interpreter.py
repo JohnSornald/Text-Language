@@ -163,10 +163,14 @@ def interpret(input):
     else:
         pass
 
+def get(file):
+    pass
 
 def openfile(filename):
     with open(filename) as file:
         for line in file:
+            if "import" in line:
+                
             line = line.rstrip("\n")
             interpret(line)
 
